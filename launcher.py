@@ -14,10 +14,13 @@ import time
 app = dash.Dash(__name__, external_stylesheets=['https://codepen.io/chriddyp/pen/bWLwgP.css'])
 app.layout = GUI.Gui.getMarkup()
 isLoading = False
+articleCounter = 0
 
 def limitStr(s : str):
+    global articleCounter
+    articleCounter += 1
     min = len(s) if len(s) < 20 else 20
-    return s[0:min]+"..."
+    return "{0}. {1}...".format(articleCounter, s[0:min])
 
 @app.callback(
     Output('stats-graph', 'figure'),
@@ -31,6 +34,8 @@ def onBtnClick(n_clicks, url, limit):
         data = channel.getArticlesStats(int(limit)) if (limit != "" and limit.isdigit()) else channel.getArticlesStats()
         isLoading = False
         titles = list(map(limitStr, data["names"]))
+        global articleCounter
+        articleCounter = 0
         fig = go.Figure(data=[go.Scatter(y=data["views"], x=titles,
             mode="lines+markers", name = "Views")])
         fig.add_trace(go.Scatter(y=data["readings"], x=titles,

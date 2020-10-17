@@ -4,7 +4,7 @@ import datetime
 class Table():
 
     col = 0
-    alphavite = ["A","B","C","D","E","F","G","I","J","K"]
+    alphabet = ["A","B","C","D","E","F","G","I","J","K"]
 
     def __init__(self, tableName : str):
         now = datetime.datetime.now()
@@ -25,7 +25,7 @@ class Table():
         chart = self.doc.add_chart({"type" : "line"})
         for key in dataCoordinates.keys(): 
             chart.add_series({"values" : f"=Sheet1!{key}:{dataCoordinates[key]}"})
-        self.sheet.insert_chart(self.alphavite[self.col-1]+"1",chart)
+        self.sheet.insert_chart(self.alphabet[self.col-1]+"1",chart)
         #chart.set_x_axis({'text_axis' : True, 'name' : "titile"})
 
     def close(self):
