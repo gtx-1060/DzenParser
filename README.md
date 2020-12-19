@@ -1,11 +1,11 @@
 <h1 align="center">
   <br>
-  <a href="https://github.com/gtx-1060/DzenParser/"><img src="http://ibb.co.com/images/logofb886d22cdd8be25.md.png" alt="DzenParser"></a>
+  <a href="https://github.com/gtx-1060/DzenParser/"><img src="http://ibb.co.com/images/logofb886d22cdd8be25.md.png" alt="ZenParser"></a>
   <br>
-  Dzen Statistics Parzer 
+  Zen Statistics Parzer 
   <br>
 </h1>
-<p align="center">A free and open-source Yandex Dzen channel statistics parser writed using python v3.7.8</p>
+<p align="center">A free and open-source Yandex Zen channel statistics parser writed using python v3.7.8</p>
 
 ## Features
  - Just enter your Zen channel link and articles count to get public information on each
