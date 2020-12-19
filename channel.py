@@ -57,7 +57,7 @@ class Channel:
         self.statsResult["viewTime"].append(data["sumViewTimeSec"] / 60)
         self.statsResult["comments"].append(data["comments"])
 
-    def getArticlesStats(self, limit : int = 10000):
+    def getArticlesStats(self, limit : int = 100000):
         if (self.statsResult != None and limit == self.oldLimit):
             return self.statsResult
         if (not self.isNormalUrl):
