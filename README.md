@@ -2,7 +2,7 @@
   <br>
   <a href="https://github.com/gtx-1060/DzenParser/"><img src="http://ibb.co.com/images/logofb886d22cdd8be25.md.png" alt="ZenParser"></a>
   <br>
-  Zen Statistics Parzer 
+  Zen Statistics Parser 
   <br>
 </h1>
 <p align="center">A free and open-source Yandex Zen channel statistics parser writed using python v3.7.8</p>
