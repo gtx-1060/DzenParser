@@ -11,7 +11,6 @@
  - Just enter your Zen channel link and articles count to get public information on each
  - Data is displayed as a graph
  - There is a module for saving statistics in an Excel tables
- - The parser is fast enough *(for python script)*
  
  
 ## Compatibility
